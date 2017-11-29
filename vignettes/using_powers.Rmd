@@ -45,8 +45,14 @@ reciprocal(1:10, plot_it=TRUE)
 Need to use powers in a geometric formula? You can quickly calculate the area of a circle and volume of a cylinder!
 
 ```{r}
-areacircle(5)
+areacircle(1:10)
 volcyl(2, 6)
+```
+
+It can also handle non-numeric values and drop `NA(s)`!
+```{r}
+areacircle("5")
+square(c(3, 4, NA))
 ```
 
 Wow!!!

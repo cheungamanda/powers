@@ -22,5 +22,5 @@ This function calculates the volume of a cylinder.
 }
 \examples{
 volcyl(5, 6)
-areacircle(2, 7, plot_it=TRUE)
+volcyl(2, 7, plot_it=TRUE)
 }

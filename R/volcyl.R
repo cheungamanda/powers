@@ -12,13 +12,10 @@
 
 #' @examples
 #' volcyl(5, 6)
-#' areacircle(2, 7, plot_it=TRUE)
+#' volcyl(2, 7, plot_it=TRUE)
 #' @rdname volcyl
 #' @export
 volcyl <- function(x, y, plot_it=FALSE) {
-  if (any(is.na(x))) warning("Argument contains NA(s). NA(s) dropped in results.")
   if (any(is.na(y))) warning("Argument contains NA(s). NA(s) dropped in results.")
-  res <- pi*((as.numeric(x))^2)*y
-  if (plot_it) print(ggplot2::qplot(x, res))
-  return(res[!is.na(res)])
+  (pow(x, a=2, plot_it=plot_it))*y*pi
 }
