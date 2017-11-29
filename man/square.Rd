@@ -5,7 +5,7 @@
 \alias{cube}
 \alias{quartic}
 \alias{reciprocal}
-\title{Square a vector}
+\title{Apply a useful power}
 \usage{
 square(x, plot_it = FALSE)
 
@@ -16,27 +16,32 @@ quartic(x, plot_it = FALSE)
 reciprocal(x, plot_it = FALSE)
 }
 \arguments{
-\item{x}{The vector to be squared.}
+\item{x}{The vector to be squared or cubed.}
+
+\item{plot_it}{Display a plot of \code{x} vs the output. Use logical.
+\code{FALSE} by default.}
 }
 \value{
-A vector that is the square of \code{x}.
+A vector that is the:
+\itemize{
+     \item square (for \code{square})
+     \item cube (for \code{cube})
+     \item quartic (for \code{quartic})
+     \item reciprocal/inverse (for \code{reciprocal})
+}
+ of \code{x}.
 }
 \description{
-That's it -- this function just squares a vector.
+That's it -- these functions square, cube, quartic, or take the
+reciprocal/inverse of a vector.
 }
 \details{
-This function isn't complicated.
-
-And it almost certainly doesn't need two paragraphs in the "Details"
-section!
-
-Here are some reasons why putting a list in this section is excessive:
-\itemize{
-     \item This \code{square} function is quite simple.
-     \item There's nothing else to say about \code{square}.
-}
+If you really want to see more, check out the internal \code{\link{pow}}
+function that these functions depend on.
 }
 \examples{
-square(1:10)
-square(-5)
+square(tenvec)
+cube(-5)
+quartic(2)
+reciprocal(3)
 }

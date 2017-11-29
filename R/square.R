@@ -1,26 +1,30 @@
-#' Square a vector
+#' Apply a useful power
 #'
-#' That's it -- this function just squares a vector.
+#' That's it -- these functions square, cube, quartic, or take the
+#' reciprocal/inverse of a vector.
 #'
-#' @param x The vector to be squared.
+#' @param x The vector to be squared or cubed.
+#' @param plot_it Display a plot of \code{x} vs the output. Use logical.
+#' \code{FALSE} by default.
 #'
-#' @return A vector that is the square of \code{x}.
+#' @return
+#' A vector that is the:
+#' \itemize{
+#'      \item square (for \code{square})
+#'      \item cube (for \code{cube})
+#'      \item quartic (for \code{quartic})
+#'      \item reciprocal/inverse (for \code{reciprocal})
+#' }
+#'  of \code{x}.
 #'
 #' @details
-#' This function isn't complicated.
-#'
-#' And it almost certainly doesn't need two paragraphs in the "Details"
-#' section!
-#'
-#' Here are some reasons why putting a list in this section is excessive:
-#' \itemize{
-#'      \item This \code{square} function is quite simple.
-#'      \item There's nothing else to say about \code{square}.
-#' }
-#'
+#' If you really want to see more, check out the internal \code{\link{pow}}
+#' function that these functions depend on.
 #' @examples
-#' square(1:10)
-#' square(-5)
+#' square(tenvec)
+#' cube(-5)
+#' quartic(2)
+#' reciprocal(3)
 #' @rdname square
 #' @export
 square <- function(x, plot_it=FALSE) pow(x, a=2, plot_it=plot_it)

@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-__Note__: This package isn't actually meant to be "serious". I made it just for teaching purposes.
+__Note__: This package isn't actually meant to be "serious". It's simply made for STAT547 Homework 09.
 
 Want to compute powers without having to use `^` or `**`? Give `sqrt` some friends by loading the `powers` package! 
 
@@ -17,7 +17,7 @@ Want to compute powers without having to use `^` or `**`? Give `sqrt` some frien
 library(powers)
 ```
 
-Want squares, cubes, or reciprocals? Easy.
+Want squares, cubes, quartics or reciprocals? Easy.
 
 ```{r}
 square(1:10)
@@ -40,6 +40,13 @@ It even comes with the ability to display its output in plot form!
 
 ```{r}
 reciprocal(1:10, plot_it=TRUE)
+```
+
+Need to use powers in a geometric formula? You can quickly calculate the area of a circle and volume of a cylinder!
+
+```{r}
+areacircle(5)
+volcyl(2, 6)
 ```
 
 Wow!!!

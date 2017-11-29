@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-__Note__: This R package is not mean to be "serious". It's just for teaching purposes. 
+__Note__: This package isn't actually meant to be "serious". It's simply made for STAT547 Homework 09.
 
 # `powers`
 
@@ -32,11 +32,13 @@ devtools::install_github("cheungamanda/powers")
 See the vignette for more extensive use, but here's an example:
 
 ```{r example}
+powers::square(-3)
 powers::reciprocal(2)
+powers::areacircle(4)
 ```
 
 ## For Developers
 
-(Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
+Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `quartic`, `reciprocal`, `areacircle`, and `volcyl`.
 
-Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `quartic` and `reciprocal`. 
+Cool package, eh? Nah, this silly pacakge was just made for class! Don't take it too seriously!

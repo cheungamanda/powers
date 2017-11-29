@@ -19,5 +19,4 @@ The vector \code{x}, raised to the power of \code{a}.
 \description{
 This function raises a vector to any power. I'm making it internal,
 by not \code{export}ing, because I don't want users to use it.
-Why not? Because I said so!
 }
