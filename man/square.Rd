@@ -2,9 +2,18 @@
 % Please edit documentation in R/square.R
 \name{square}
 \alias{square}
+\alias{cube}
+\alias{quartic}
+\alias{reciprocal}
 \title{Square a vector}
 \usage{
-square(x)
+square(x, plot_it = FALSE)
+
+cube(x, plot_it = FALSE)
+
+quartic(x, plot_it = FALSE)
+
+reciprocal(x, plot_it = FALSE)
 }
 \arguments{
 \item{x}{The vector to be squared.}

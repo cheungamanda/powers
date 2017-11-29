@@ -4,7 +4,16 @@
 \name{powers}
 \alias{powers}
 \alias{powers-package}
-\title{powers.}
+\title{Convenient Computation of Powers}
 \description{
-powers.
+Are you tired of using the power operator, \code{^} or \code{**} in R?
+Use this package to call functions that apply common powers
+to your vectors.
+}
+\note{
+This package isn't actually meant to be serious. It's just for
+homework purposes.
+}
+\author{
+Amanda Cheung
 }

@@ -1,42 +1,35 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+**Note**: This R package is not mean to be "serious". It's just for teaching purposes.
 
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
-
-__Note__: This R package is not mean to be "serious". It's just for teaching purposes. 
-
-# `powers`
+`powers`
+========
 
 This is an R package that gives `sqrt()` friends by providing other power functions.
 
-## Installation
+Installation
+------------
 
 You can install powers from github with:
 
-```{r gh-installation, eval = FALSE}
+``` r
 # install.packages("devtools")
 devtools::install_github("cheungamanda/powers")
 ```
 
-## Example
+Example
+-------
 
 See the vignette for more extensive use, but here's an example:
 
-```{r example}
+``` r
 powers::reciprocal(2)
+#> [1] 0.5
 ```
 
-## For Developers
+For Developers
+--------------
 
 (Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
 
-Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `quartic` and `reciprocal`. 
+Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `quartic` and `reciprocal`.
